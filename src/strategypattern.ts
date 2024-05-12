@@ -23,18 +23,21 @@ class Multiplication implements Maths {
     }
 }
 
+// concrete strategy
 class Divide implements Maths {
     calculate(a: number, b: number): number {
         return a / b;
     }
 }
 
+// concrete strategy
 class Remainder implements Maths {
     calculate(a: number, b: number): number {
         return a % b;
     }
 }
 
+// concrete strategy
 class MathsContext {
     private strategy: Maths;
 
