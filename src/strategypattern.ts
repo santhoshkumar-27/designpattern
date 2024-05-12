@@ -47,8 +47,9 @@ class MathsContext {
     }
 
 }
-
+// created a context for Calculations
 const context = new MathsContext();
-
+// setting a context is Addition
 context.setStrategy(new Addition())
+// Doing some alogrithm
 console.log(context.execute(2, 2))
